@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <div class="container" >
+            <label><h3>Age Calculator</h3><h5>Enter your age</h5>:</label>
+            <input type="text" id="num">
+            
+            <button onclick="check()">Show</button>
+            
+            <div class="alert alert-success" id="show"><br></div>
+            <br>
+        </div>
+    </center>
+    <script>
+        function check() {
+            var num = document.getElementById("num").value; if (num <= 17) {
+                document.getElementById("show").innerHTML = "kiddo ";
+            } else if (num <= 30) {
+                document.getElementById("show").innerHTML = "tough luck brudda";
+            } else if (num < 99) {
+                document.getElementById("show").innerHTML = "too old buddy ";
+            } else {
+                document.getElementById("show").innerHTML = "Please enter correct value";
+            }
+        }
+    </script>
+</body>
+
+</html>
